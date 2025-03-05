@@ -5,7 +5,8 @@ import { useEffect } from 'react'
 export function ServicesMouseTracker() {
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
-      const servicesSection = document.querySelector('.services-section');
+      const servicesSection = document.querySelector('.your-class-name') as HTMLElement;
+
       if (servicesSection) {
         const rect = servicesSection.getBoundingClientRect();
         const x = ((e.clientX - rect.left) / rect.width) * 100;
