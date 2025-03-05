@@ -2,7 +2,6 @@
 
 import * as React from "react"
 import useEmblaCarousel from "embla-carousel-react"
-import AutoplayPlugin from "embla-carousel-autoplay"
 import { cn } from "@/lib/utils"
 
 const clientLogos = [
@@ -86,7 +85,8 @@ export function LogoSlider() {
       containScroll: "trimSnaps",
       align: "start",
     },
-    [AutoplayPlugin({ delay: 3000, stopOnInteraction: false })]
+    
+    
   )
 
   return (
